@@ -103,7 +103,7 @@ resource "azurerm_public_ip" "tf-ip-devops" {
   allocation_method   = "Static"
 }
 
-resource "azurerm_virtual_machine" "tf-ubuntu-test" {
+resource "azurerm_linux_virtual_machine" "tf-ubuntu-test" {
   name                  = "tf-ubuntu-test"
   resource_group_name   = azurerm_resource_group.tf-dev-rg.name
   location              = azurerm_resource_group.tf-dev-rg.location
